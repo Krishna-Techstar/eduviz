@@ -1,0 +1,1 @@
+{"version":3,"file":"tree.d.ts","sourceRoot":"","sources":["../../src/types/tree.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,cAAc;IAC7B,GAAG,EAAE,MAAM,GAAG,MAAM,CAAC;IACrB,IAAI,CAAC,EAAE,cAAc,GAAG,IAAI,CAAC;IAC7B,KAAK,CAAC,EAAE,cAAc,GAAG,IAAI,CAAC;CAC/B"}

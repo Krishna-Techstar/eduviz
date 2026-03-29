@@ -1,0 +1,85 @@
+### Health
+GET http://localhost:4000/health
+
+### Dijkstra (example from spec)
+POST http://localhost:4000/api/visualize
+Content-Type: application/json
+
+{
+  "algorithm": "dijkstra",
+  "input": {
+    "nodes": ["A", "B", "C"],
+    "edges": [
+      ["A", "B", 4],
+      ["A", "C", 2],
+      ["C", "B", 1]
+    ],
+    "source": "A"
+  },
+  "mode": "manual",
+  "playback": {
+    "durationMsPerStep": 400
+  }
+}
+
+### BFS
+POST http://localhost:4000/api/visualize
+Content-Type: application/json
+
+{
+  "algorithm": "bfs",
+  "input": {
+    "nodes": ["A", "B", "C", "D"],
+    "edges": [
+      ["A", "B", 1],
+      ["A", "C", 1],
+      ["B", "D", 1]
+    ],
+    "start": "A"
+  }
+}
+
+### Bubble sort
+POST http://localhost:4000/api/visualize
+Content-Type: application/json
+
+{
+  "algorithm": "bubbleSort",
+  "input": {
+    "array": [5, 1, 4, 2]
+  }
+}
+
+### Binary tree inorder
+POST http://localhost:4000/api/visualize
+Content-Type: application/json
+
+{
+  "algorithm": "binaryTreeTraversal",
+  "input": {
+    "tree": {
+      "val": 2,
+      "left": { "val": 1 },
+      "right": { "val": 3 }
+    },
+    "order": "inorder"
+  }
+}
+
+### Analyze C++ (BFS-like)
+POST http://localhost:4000/api/analyze-code
+Content-Type: application/json
+
+{
+  "code": "#include <queue>\nvoid bfs() {\n  std::queue<int> q;\n  q.push(0);\n  while (!q.empty()) {\n    int u = q.front();\n    for (int v : adj[u]) { q.push(v); }\n  }\n}\n",
+  "language": "cpp"
+}
+
+### Analyze Java (Dijkstra-like)
+POST http://localhost:4000/api/analyze-code
+Content-Type: application/json
+
+{
+  "code": "PriorityQueue<int[]> pq = new PriorityQueue<>();\nint[] dist = new int[n];\nArrays.fill(dist, INF);\ndist[s] = 0;\npq.offer(new int[]{0, s});",
+  "language": "java"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"dfs.d.ts","sourceRoot":"","sources":["../../src/algorithms/dfs.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,qBAAqB,EAAE,MAAM,mBAAmB,CAAC;AAC/D,OAAO,KAAK,EAAE,iBAAiB,EAAE,MAAM,yBAAyB,CAAC;AAOjE;;GAEG;AACH,wBAAgB,GAAG,CAAC,KAAK,EAAE,qBAAqB,EAAE,KAAK,EAAE,MAAM,GAAG,iBAAiB,EAAE,CAmFpF"}
